@@ -1,0 +1,88 @@
+.hero {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    background: url(../hero.jpeg) center/cover no-repeat;
+    place-items: center;
+}
+    .banner {
+        width: 90%;
+        max-width: 50vw;
+        background-color: var(--clr-white);
+        border-radius: var(--radius);
+        box-shadow: var(--dark-shadow);
+        padding: 5% 0;
+        text-align: center;
+    }
+    .banner > h1 {
+        text-transform: uppercase;
+        letter-spacing: var(--spacing);
+        padding: 5px 0;
+        font-size: 3rem;
+        color: var(--clr-grey-2);
+    }
+    .banner > button.btn {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-family: var(--ff-secondary);
+        letter-spacing: var(--spacing);
+        padding: 5px 10px;
+        margin-top: 5%;
+        border-radius: var(--radius);
+        color: var(--clr-white);
+        background-color: var(--clr-primary-6);
+        border: 1px solid var(--clr-primary-6);
+        cursor: pointer;
+        transition: 1s;
+    }
+    .banner > button.btn:hover {
+        color: var(--clr-primary-6);
+        background-color: transparent;
+    }
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    background-color: rgba(73, 166, 233, 0.5);
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    visibility: hidden;
+}
+.modal-overlay.active {
+    z-index: 10;
+    visibility: visible;
+}
+    .modal-container {
+        width: 90%;
+        max-width: 50vw;
+        padding: 5% 0;
+        background-color: var(--clr-white);
+        display: grid;
+        place-items: center;
+        position: relative;
+    }
+    .modal-container > h3 {
+        text-transform: capitalize;
+        letter-spacing: var(--spacing);
+    }
+    .modal-container > button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 1.5rem;
+        color: var(--clr-red-dark);
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .modal-container > button:hover {
+        transform: scale(1.5);
+        transition: 1s;
+    }
+    
+
+

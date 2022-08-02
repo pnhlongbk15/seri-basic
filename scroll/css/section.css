@@ -1,0 +1,39 @@
+
+#about,
+#services,
+#tours {
+    width: 100vw;
+    min-height: 100vh;
+}
+#about {background: var(--clr-primary-10);}
+#tours {background: var(--clr-primary-10);}
+
+footer {
+    background: var(--clr-grey-1);
+    padding: 5rem 1rem;
+    font-family: var(--ff-secondary);
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    text-align: center;
+}
+
+@media screen and (min-width:800px) {
+    .section .title {
+        font-size: 2rem;
+        text-align: center;
+        font-family: var(--ff-primary);
+        text-transform: uppercase;
+    }
+    .section span {
+        color: var(--clr-primary-6);
+    }
+    footer.section > p {
+        color: var(--clr-white);
+        font-size: 1.2rem;
+    }
+    footer.section > p > span {
+        color: var(--clr-white);
+    }
+    
+}
+    
